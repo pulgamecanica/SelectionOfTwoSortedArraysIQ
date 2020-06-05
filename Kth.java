@@ -8,7 +8,7 @@ public class Kth {
         int k1 = 9; 
         int answer = kthLog(k1, array1, array2); 
         System.out.println("************************");
-        if (answer == -1) 
+        if (answer == (int)Double.POSITIVE_INFINITY) 
             System.out.println("Invalid!!!"); 
         else
             System.out.println(answer); 
@@ -18,7 +18,7 @@ public class Kth {
         int m = arr1.length;
         int n = arr2.length;
         if (k > (m + n) || k < 1) 
-            return -1; 
+            return (int)Double.POSITIVE_INFINITY; 
         else if (m > n) 
             return kthLog(k, arr2, arr1); 
         else if (m == 0) 
